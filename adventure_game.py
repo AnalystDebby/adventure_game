@@ -5,8 +5,7 @@ import string
 
 def enemy():
 
-    enemy_creature = ["'bear', 'dragon', 'bat', 'snake'"
-                      ", 'pirate', 'troll', 'wicked fairy'"]
+    enemy_creature = ['bear', 'dragon', 'pirate', 'troll', 'wicked fairy']
     enemy = random.choice(enemy_creature)
     return enemy
 
@@ -44,8 +43,8 @@ def intro(enemy):
 def door_choice(weapon, enemy):
 
     print_pause("You approach the door of the house.")
-    print_pause(f"You are about to knock when the door "
-                "opens and out steps a {enemy()}.")
+    print_pause("You are about to knock when the door "
+                f"opens and out steps a {enemy()}.")
     print_pause(f"Eep! This is the {enemy()} house!")
     print_pause(f"The {enemy()} attacks you!")
     if 'sword' in weapon:
@@ -186,5 +185,4 @@ def play_game():
 
 
 play_game()
-
 
